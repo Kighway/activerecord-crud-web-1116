@@ -1,3 +1,5 @@
+require 'pry'
+
 describe 'Movie' do
   let(:attributes) {{
       title: "The Sting",
@@ -75,6 +77,7 @@ describe 'Movie' do
         expect(Movie.last).to eq(movie)
         expect(Movie.last.title).to eq("Home Alone")
         expect(Movie.last.release_date).to eq(1990)
+
       end
     end
 
